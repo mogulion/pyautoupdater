@@ -1,0 +1,21 @@
+{
+    "app_name": "simple-calculator",
+    "version": "1.0.0",
+    "entry_point": "main.py",
+    "output_dir": "dist",
+    "icon": null,
+    "console": false,
+    "onefile": true,
+    "include_files": [
+        "config.json",
+        "keys/public_key.pem"
+    ],
+    "hidden_imports": [
+        "pyautoupdater"
+    ],
+    "exclude_modules": [],
+    "runtime_hooks": [],
+    "additional_args": [
+        "--clean"
+    ]
+}

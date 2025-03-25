@@ -1,0 +1,30 @@
+{
+    "package_name": "my-application",
+    "current_version": "1.0.0",
+    "repositories": [
+        {
+            "url": "https://private-pypi.example.com",
+            "username": "${PYPI_USERNAME}",
+            "password": "${PYPI_PASSWORD}",
+            "verify_ssl": true
+        }
+    ],
+    "temp_dir": "${TEMP}/my-app-updates",
+    "backup_dir": "${TEMP}/my-app-backups",
+    "max_download_retries": 3,
+    "chunk_size": 8192,
+    "timeout": 30,
+    "proxy": null,
+    "enable_delta": true,
+    "security": {
+        "signature_verification": true,
+        "signature_type": "rsa",
+        "public_key_path": "${APP_DIR}/keys/public_key.pem",
+        "trusted_fingerprints": []
+    },
+    "delta": {
+        "enable_delta": true,
+        "manifest_filename": "manifest.json",
+        "chunk_size": 4096
+    }
+}
